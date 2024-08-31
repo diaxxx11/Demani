@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Wermino';
+  src: url('/fonts/wermino-demo/WERMINO-DEMO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background-color: #E7E5E5;
+  --main-background: #ccc;
+  --post-button: #d5c6c6;
+  --post-background: #F2F1F1;
+  --text-color: #1c1e21;
+  --tab-text-color: #1c1e21;
+
+}
+
+[data-mantine-color-scheme="dark"] {
+  --background-color: #1b3755;
+  --main-background: #081e35;
+  --post-button: #0767a2;
+  --post-background: #040b17;
+  --text-color: #ffffff;
+  --tab-text-color: #ffffff;
+
+}
+
+body {
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 400; /* Regular weight */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'SF Pro', sans-serif;
+
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'SF Pro', sans-serif;
+}
+
+:root {
+  /* --primary-color: #228be6;  */
+  --primary-color-hover: #1c7ed6; /* A slightly darker shade for hover effect */
+}
+
+* {
+  cursor: none;
+}
+
+body {
+  cursor: none;
+}

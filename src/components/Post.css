@@ -1,0 +1,391 @@
+.post {
+  background-color: var(--post-background);
+  border: 1px solid var(--main-background);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.vote-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.vote-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.vote-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.post-author {
+  margin-bottom: 1px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.vote-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.vote-section > *:nth-child(2) {
+  margin-right: 10px;
+}
+
+.vote-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.vote-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.vote-up {
+  transform: rotate(-deg);
+}
+
+.vote-down {
+  transform: rotate(deg);
+}
+
+.nickname {
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1px;
+}
+
+.post-title {
+  margin: 0;
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.post-body {
+  margin: 0;
+  font-size: 14px;
+}
+  
+  .post h2 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .post .author {
+    color: #65676b;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 1px;
+  }
+  
+  .post .date {
+    color: rgba(101, 103, 107, 0.7);
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .post .nickname {
+    font-size: 12px;
+    color: #65676b;
+    font-weight: normal;
+    margin-left: 8px;
+  }
+  
+  .comments {
+    margin-top: 1rem;
+  }
+
+  .comments h3 {
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+
+  .comment-content {
+    flex: 1;
+    border-left: 2px solid var(--border-color);
+    padding-left: 10px;
+  }
+
+  .comment .comment-content {
+    font-size: 14px;
+  }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    border-left: 2px solid #e0e0e0;
+    font-size: 12px;
+  }
+
+  .comment-vote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+    min-width: 20px;
+  }
+
+  .comment-vote .vote-button {
+    padding: 0;
+  }
+
+  .comment-vote .vote-button img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .comment-content {
+    flex: 1;
+  }
+
+  .comment-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 1px;
+  }
+
+  .comment-actions {
+    margin-top: 4px;
+  }
+
+  .replies {
+    margin-top: 10px;
+    margin-left: 20px;
+    /* border-left: 2px solid var(--border-color); */
+    padding-left: 10px;
+  }
+
+
+
+  .vote-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .vote-button img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .comments-section {
+    margin-top: 16px;
+  }
+
+  .comments-section > .comment {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 8px;
+  }
+
+  .comments-section > .comment:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .comment .nickname,
+.comment .date {
+  margin: 2px 0;
+}
+  
+  .add-comment input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .comment-content {
+    margin-bottom: 10px;
+    flex: 1;
+    padding-left: 10px;
+    border-left: 2px solid var(--border-color);
+  }
+
+  .comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .comment-vote .vote-button {
+    padding: 0;
+  }
+  
+  .comment-vote .vote-button img {
+    width: 13px;
+    height: 11px;
+  }
+
+  .comment .vote-section {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .comment .vote-section .vote-button {
+    padding: 2px;
+  }
+  
+  .comment .vote-section .vote-button.active {
+    background-color: #228be6;
+    border-radius: 20%;
+  }
+  
+  .comment .vote-section .vote-button.active img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .replies {
+    margin-left: 20px;
+    /* border-left: 2px solid #e0e0e0; */
+    padding-left: 10px;
+  }
+
+  .replies h2 {
+    color: var(--text-color);
+  }
+
+  /* .replies::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 15px;
+    left: -12px;
+    width: 2px;
+    background-color: var(--border-color);
+  } */
+
+  .post-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    color: var(--text-color);
+
+  }
+  
+  .action-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 10px;
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease;
+
+  }
+
+  .action-button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  
+  .action-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgb(0, 0, 0);
+  }
+
+  .post p {
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  
+  .post h2 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 1.4rem;
+    color: #000;
+  } 
+
+  [data-mantine-color-scheme='dark'] .post h2 {
+    color: #fff;
+  }
+
+  .date {
+    font-size: 0.8em;
+    color: var(--muted-color);
+    margin: 0;
+  }
+
+  .level-0 {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  
+  .level-1 {
+    margin-left: 5px;
+    flex-direction: column;
+  }
+  
+  .level-2 {
+    margin-left: 10px;
+    flex-direction: column;
+
+  }
+  
+  .level-3 {
+    margin-left: 15px;
+    flex-direction: column;
+
+  }
+  
+  .replies {
+    margin-top: 10px;
+  }
+
+
+  .mantine-Menu-dropdown {
+    background-color: var(--post-background);
+    border: 1px solid var(--border-color);
+  }
+  
+  .mantine-Menu-item {
+    color: var(--text-color);
+  }
+  
+  .mantine-Menu-item:hover {
+    background-color: var(--accent-color);
+  }
+
+  .vote-button.active {
+    background-color: #228be6; /* Same blue as the "Post +" button */
+    border-radius: 20%; /* Make it circular */
+    padding: 1px; /* Add some padding to increase the size */
+  }
+  
+  .vote-button.active img {
+    filter: brightness(0) invert(1); /* Make the icon white when active */
+    width: 15px; /* Increase the size of the icon */
+    height: 13px;
+  }

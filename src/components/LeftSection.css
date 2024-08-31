@@ -1,0 +1,120 @@
+.left-section {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-right: 1px solid var(--main-background);
+  box-sizing: border-box;
+}
+  
+.nav-button {
+  display: block;
+  /* background-color: #7F605F; */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 900;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.nav-button.active {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+  .mantime-Tabs-tabLabel {
+    margin-left: 10px;
+  }
+  
+  .nav-button span {
+    margin-left: 20px;
+  }
+
+  .nav-button:hover {
+    background-color: #ccc;
+  }
+
+  .custom-tab {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: inherit;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .custom-tab[data-active] {
+    font-weight: 900;
+    color: var(--primary-color);
+    background-color: #D5C6C6;
+  }
+  
+  .custom-tab:hover {
+    background-color: #D5C6C6;
+  }
+  
+  .custom-tab-label {
+    margin-left: 10px;
+  }
+  .custom-tab a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .custom-tab[data-active] a {
+    font-weight: 900;
+    color: var(--primary-color);
+  }
+
+  .mantine-Tabs-tab[data-active] {
+    background-color: var(--mantine-color-blue-filled);
+  }
+  
+  .mantine-Tabs-tab:hover {
+    background-color: var(--mantine-color-gray-1);
+  }
+  
+  [data-mantine-color-scheme='dark'] .mantine-Tabs-tab:hover {
+    background-color: #040b17;
+  }
+  .custom-tab-list {
+    width: 100%;
+  }
+  
+  .custom-tab {
+    width: 100%;
+    padding: 10px 30px;
+    justify-content: flex-start;
+  }
+  
+  .custom-tab-label {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .tab-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--tab-text-color);
+    transition: background-color 0.2s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .tab-button-icon {
+    margin-right: 10px;
+  }
+  
+  .tab-button-text {
+    font-size: 16px;
+  }

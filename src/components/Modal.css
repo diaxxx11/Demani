@@ -1,0 +1,54 @@
+.custom-modal {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mantine-Modal-root .custom-modal-textarea,
+.mantine-Modal-root .custom-modal-input {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--input-background);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 1rem;
+  box-sizing: content-box;
+}
+
+.mantine-Modal-root .custom-modal-textarea {
+  min-height: 100px;
+  width: 1000;
+  min-width: 100px;
+  resize: vertical;
+}
+
+.mantine-Modal-root .custom-modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mantine-Modal-root .custom-modal-button {
+  background-color: #228be6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.mantine-Modal-root .custom-modal-button:hover {
+  background-color: #1c7ed6;
+}

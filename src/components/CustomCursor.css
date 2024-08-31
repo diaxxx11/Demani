@@ -1,0 +1,50 @@
+.cursor {
+    --size: 14px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2147483647;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 1;
+    background: #000000;
+    box-shadow: 0 0 0 1px #000000;
+    transition: opacity 0.3s, width 0.3s, height 0.3s;
+  }
+  
+  .cursor.visible {
+    opacity: 1;
+    background: #000000;
+
+  }
+  
+  .cursor.visible {
+    opacity: 1;
+  }
+  
+  .cursor.visible {
+    opacity: 1;
+  }
+  
+  .cursor.activeHover {
+    --size: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'SF Pro', sans-serif;
+    mix-blend-mode: normal;
+  }
+  
+  .cursor div {
+    transition: transform 0.3s;
+    transform: scale(0);
+  }
+  
+  .cursor.activeHover div {
+    transform: scale(1);
+  }
