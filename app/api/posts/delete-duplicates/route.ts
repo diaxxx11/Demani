@@ -11,7 +11,7 @@ export async function POST() {
       {
         $group: {
           _id: { title: "$title", content: "$content" },
-          dups: { $addToSet: "$_id" },
+          docs: { $push: "$$ROOT" },
           count: { $sum: 1 }
         }
       },
@@ -22,9 +22,19 @@ export async function POST() {
       }
     ]).toArray();
 
-    for (let dup of result) {
-      dup.dups.shift(); // Keep one document
-      await postsCollection.deleteMany({ _id: { $in: dup.dups } });
+    for (let group of result) {
+      // Sort the documents by createdAt date, oldest first
+      group.docs.sort((a, b) => new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime());
+      
+      // Keep the oldest document
+      const toKeep = group.docs[0]._id;
+      
+      // Delete all other documents in this group
+      await postsCollection.deleteMany({
+        _id: { $in: group.docs.slice(1).map(doc => doc._id) },
+        title: group._id.title,
+        content: group._id.content
+      });
     }
 
     return NextResponse.json({ message: 'Duplicate posts deleted successfully' });

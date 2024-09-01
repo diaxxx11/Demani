@@ -118,3 +118,9 @@
   .tab-button-text {
     font-size: 16px;
   }
+
+  .active-link {
+    color: #228be6; /* Mantine's default blue color */
+    font-weight: bold;
+  }
+  

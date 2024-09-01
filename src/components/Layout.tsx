@@ -4,7 +4,6 @@ import HomePage from './HomePage';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 import CustomCursor from './CustomCursor';
-
 import './Layout.css';
 import { useMantineColorScheme } from '@mantine/core';
 

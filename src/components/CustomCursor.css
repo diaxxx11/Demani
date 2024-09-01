@@ -1,5 +1,5 @@
 .cursor {
-    --size: 14px;
+    --size: 10px;
     height: var(--size);
     width: var(--size);
     border-radius: 50%;

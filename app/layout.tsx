@@ -11,11 +11,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
   const [colorScheme, setColorScheme] = useState<'light' | 'dark'>('light');
 
   const toggleColorScheme = () => {
-    setColorScheme(current => (current === 'dark'? 'light' : 'dark'));
+    setColorScheme(current => (current === 'dark' ? 'light' : 'dark'));
   };
 
   const theme = createTheme({
@@ -26,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <MantineProvider theme={theme} defaultColorScheme={colorScheme}>
-          <Layout>
+          <Layout colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
             {children}
           </Layout>
         </MantineProvider>

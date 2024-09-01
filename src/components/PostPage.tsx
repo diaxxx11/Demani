@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Post from './Post';
 import { useParams } from 'next/navigation';
+import Layout from '@/components/Layout'; 
 
 interface PostData {
   _id: string;
@@ -52,14 +53,14 @@ const PostPage: React.FC = () => {
         },
         body: JSON.stringify({ postId, content, author, parentCommentId }),
       });
-  
+
       if (!response.ok) {
         throw new Error('Failed to add comment');
       }
-  
+
       const result = await response.json();
       console.log('Comment added successfully:', result);
-  
+
       // Refresh the post after adding a comment
       fetchPost(postId);
     } catch (error) {
